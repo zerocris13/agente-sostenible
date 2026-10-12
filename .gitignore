@@ -7,3 +7,6 @@ __pycache__/
 *.pyc
 
 .runtime/
+
+# Copias de seguridad locales
+*.bak
