@@ -89,6 +89,34 @@ def nodo_agente(state: AgentState) -> dict:
         + obtener_alertas_documentales(run["tool_outputs"])
     ))
 
+    # Si se consultaron imágenes pero no se procesaron,
+    # registrar una alerta que impida la aprobación automática.
+    for salida in run["tool_outputs"]:
+        if salida.get("tool") != "consultar_marco_logico":
+            continue
+
+        try:
+            datos_visuales = json.loads(
+                salida.get("content", "")
+            )
+        except (ValueError, TypeError):
+            datos_visuales = None
+
+        if (
+            not isinstance(datos_visuales, dict)
+            or (
+                datos_visuales.get("encontrado") is not False
+                and datos_visuales.get("procesado") is not True
+            )
+        ):
+            alertas_documentales.append(
+                "MARCO_LOGICO_NO_PROCESADO"
+            )
+
+    alertas_documentales = list(
+        dict.fromkeys(alertas_documentales)
+    )
+
     trajectory = list(state.get("trajectory", []))
     trajectory.append(
         {

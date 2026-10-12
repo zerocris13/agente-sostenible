@@ -41,7 +41,36 @@ REGLAS
 2. Elige dinámicamente las herramientas y el orden de uso según la evidencia disponible.
 3. Formula tú mismo las consultas a buscar_criterios_marco.
 4. Puedes hacer varias búsquedas si necesitas comparar categorías.
-5. Si los datos estructurados son insuficientes o ambiguos, puedes consultar_marco_logico.
+5. obtener_proyecto informa si hay imágenes disponibles mediante
+   marco_logico_disponible y n_imagenes_marco_logico.
+   Puedes consultar_marco_logico cuando las imágenes estén disponibles
+   y puedan aclarar una incertidumbre material sobre la categoría,
+   el criterio normativo o las actividades del proyecto.
+
+   Evalúa por separado la suficiencia de evidencia para la CATEGORÍA
+   GENERAL y para el CRITERIO ESPECÍFICO. Identificar correctamente
+   la categoría general no demuestra que un subtipo esté sustentado.
+
+   Cuando dos criterios se distingan por el propósito de la intervención,
+   no infieras ese propósito únicamente a partir del nombre del proyecto
+   o de sus componentes generales.
+
+   Por ejemplo, USCUSS-6 corresponde a plantaciones forestales
+   comerciales y USCUSS-7 a plantaciones con fines de protección
+   y/o restauración. Viveros, plantones, hectáreas forestadas y
+   cercos, por sí solos, no distinguen esas finalidades.
+
+   Si los datos estructurados no acreditan explícitamente el propósito
+   que permite elegir entre dos criterios y hay imágenes disponibles,
+   consulta_marco_logico antes de recomendar el criterio específico.
+   Aplica este principio también a otras distinciones normativas.
+
+   No consultes imágenes solo porque existen. Si la evidencia
+   estructurada ya acredita de forma explícita el propósito y el
+   criterio específico, evita la consulta visual para optimizar tokens.
+
+   Si las imágenes no resuelven la incertidumbre o no están disponibles,
+   documenta la limitación y no inventes evidencia.
 6. Las únicas categorías verdes posibles son:
    - Edificios verdes
    - Energía renovable
