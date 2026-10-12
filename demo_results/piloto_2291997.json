@@ -1,0 +1,89 @@
+{
+  "cui": "2291997",
+  "modelo": "gpt-5.4-mini",
+  "resultado": {
+    "cui": "2291997",
+    "clasificacion": "Agricultura sostenible",
+    "criterio_principal": "AGU-3: Implementación de infraestructura hidráulica de conducción, distribución y aplicación de agua para riego.",
+    "estado": "APROBADO",
+    "iteraciones": 1,
+    "evidencia_suficiente": true,
+    "requiere_revision_humana": false,
+    "justificacion": "La evidencia del proyecto muestra que se trata de una inversión de riego agrícola: función agropecuaria, programa riego, brecha de provisión de agua para riego y mejora de infraestructura para irrigar más de 308 ha. El Marco 2021 en la página 37 incluye de forma directa el criterio AGU-3 para infraestructura hidráulica de conducción, distribución y aplicación de agua para riego, lo que corresponde materialmente al alcance del proyecto. Aunque en la página 35 existe coincidencia parcial con AGU-5 por las capacitaciones y el uso sostenible del agua, ese elemento es accesorio frente al núcleo de la inversión, que es infraestructura de riego agrícola. Por ello la clasificación adecuada es Agricultura sostenible.",
+    "paginas_marco": [
+      37,
+      35
+    ],
+    "evidencia_proyecto": [
+      "Nombre de la inversión: \"MEJORAMIENTO DEL SISTEMA DE RIEGO DE LOS CASERIOS DE LA PARTE BAJA, DISTRITO DE MACHE - OTUZCO - LA LIBERTAD\".",
+      "Función: Agropecuaria. Programa: Riego. Subprograma: Infraestructura de riego.",
+      "Beneficiarios finales: 640.",
+      "El marco lógico indica como objetivo mayores ingresos de la población dedicada a la agricultura y como propósito una adecuada disponibilidad de agua en el sistema de riego."
+    ],
+    "evidencia_brechas": [
+      "Brecha asociada: \"Servicio de provisión de agua para riego\" / \"Porcentaje de superficie agrícola sin riego\".",
+      "La intervención apunta a mejorar la provisión de agua para riego y reducir superficie agrícola sin riego.",
+      "Cobertura referida en el marco lógico: más de 308 ha."
+    ],
+    "evidencia_marco": [
+      "Página 37: en Agricultura sostenible se incluyen \"Sistemas de irrigación por goteo\" y \"Sistemas de riego con el uso eficiente de aguas mejores comparado con los sistemas y prácticas existentes\".",
+      "Página 37: criterio AGU-3: \"Implementación de infraestructura hidráulica de conducción, distribución y aplicación de agua para riego\".",
+      "Página 35: AGU-5 permite asistencia técnica y fortalecimiento de capacidades de productores agropecuarios para el aprovechamiento sostenible del agua, pero corresponde a la categoría hídrica general y aparece solo como coincidencia accesoria."
+    ],
+    "evidencia_marco_logico": [
+      "Objetivo: \"Mayores ingresos de la población dedicada a la agricultura.\"",
+      "Brecha/necesidad: \"Adecuada disponibilidad de agua en el sistema de riego de las microrepresas.\"",
+      "Componentes: estructura de conducción adecuada, alta capacidad técnico administrativa de los Operadores de Riego y uso de técnicas adecuadas de riego.",
+      "Actividades: mejoramiento de la infraestructura de riego, capacitación y sensibilización a encargados de la distribución del agua, y capacitación a los usuarios en técnicas de riego.",
+      "Se menciona que el sistema dispondrá de 200 lts/seg para irrigar más de 308 hectáreas."
+    ],
+    "alertas_documentales": []
+  },
+  "trayectoria": [
+    {
+      "iteracion": 1,
+      "fase": "agente_evidencia"
+    },
+    {
+      "iteracion": 1,
+      "fase": "validacion_determinista",
+      "aprobado": true
+    },
+    {
+      "iteracion": 1,
+      "fase": "verificador_semantico",
+      "aprobado": true,
+      "categoria_sustentada": true,
+      "evidencia_suficiente": true,
+      "siguiente_accion": "finalizar"
+    }
+  ],
+  "veredicto": {
+    "aprobado": true,
+    "categoria_sustentada": true,
+    "evidencia_suficiente": true,
+    "problemas": [],
+    "feedback_para_agente": "La clasificación en Agricultura sostenible está bien sustentada por la evidencia recuperada: el proyecto es un mejoramiento de sistema de riego, está en la función agropecuaria, programa riego, y la brecha asociada es provisión de agua para riego/superficie agrícola sin riego. El criterio AGU-3 de la página 37 del Marco 2021 corresponde de forma directa a infraestructura hidráulica de conducción, distribución y aplicación de agua para riego. La referencia a AGU-5 en la página 35 solo aporta un solapamiento accesorio por las capacitaciones y no desplaza el núcleo agrícola de la intervención. No se requiere abstención ni revisión humana adicional con la evidencia disponible."
+  },
+  "tool_calls": [
+    {
+      "name": "obtener_proyecto"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "consultar_marco_logico"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    }
+  ],
+  "consultas_marco": []
+}

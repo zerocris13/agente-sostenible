@@ -1,0 +1,75 @@
+{
+  "cui": "2496772",
+  "modelo": "gpt-5.4-mini",
+  "resultado": {
+    "cui": "2496772",
+    "clasificacion": "Gestión eficiente y resiliente de aguas y aguas residuales",
+    "criterio_principal": "Sistemas de defensa contra inundaciones fluviales",
+    "estado": "APROBADO",
+    "iteraciones": 1,
+    "evidencia_suficiente": true,
+    "requiere_revision_humana": false,
+    "justificacion": "La intervención consiste en defensas ribereñas para proteger ambas márgenes del río Tumbes frente a inundaciones. El Marco 2021, en la categoría de Gestión eficiente y resiliente de aguas y aguas residuales, incluye explícitamente como gasto elegible los sistemas de defensa contra inundaciones fluviales. La correspondencia material es directa y suficiente.",
+    "paginas_marco": [
+      35
+    ],
+    "evidencia_proyecto": [
+      "Nombre de la inversión: “CREACION DE SERVICIO DE PROTECCION FRENTE A INUNDACIONES EN AMBAS MARGENES DEL RIO TUMBES...”.",
+      "Alternativa: “CONSTRUCCIÓN DEFENSAS RIBEREÑAS... estabilizar y proteger los taludes de ambas márgenes con diques... geoceldas... construcción de 105402 km de defensa ribereña”.",
+      "Brecha asociada al servicio: “SERVICIOS DE PROTECCIÓN EN RIBERAS DE RÍO VULNERABLES ANTE EL PELIGRO”."
+    ],
+    "evidencia_brechas": [
+      "El proyecto está orientado materialmente a la protección frente a inundaciones y a la reducción de puntos críticos en ribera de río no protegidos.",
+      "La función y subprograma del proyecto son “GESTIÓN DE RIESGOS Y EMERGENCIAS” y “PREVENCIÓN DE DESASTRES”, consistentes con una obra de defensa ribereña."
+    ],
+    "evidencia_marco": [
+      "Marco del Bono Sostenible del Perú, p. 35: entre los gastos elegibles se incluyen “Sistemas de defensa contra inundaciones fluviales, incluyendo la construcción de reservorios para el control de los flujos de agua”."
+    ],
+    "evidencia_marco_logico": [],
+    "alertas_documentales": []
+  },
+  "trayectoria": [
+    {
+      "iteracion": 1,
+      "fase": "agente_evidencia"
+    },
+    {
+      "iteracion": 1,
+      "fase": "validacion_determinista",
+      "aprobado": true
+    },
+    {
+      "iteracion": 1,
+      "fase": "verificador_semantico",
+      "aprobado": true,
+      "categoria_sustentada": true,
+      "evidencia_suficiente": true,
+      "siguiente_accion": "finalizar"
+    }
+  ],
+  "veredicto": {
+    "aprobado": true,
+    "categoria_sustentada": true,
+    "evidencia_suficiente": true,
+    "problemas": [],
+    "feedback_para_agente": "La categoría propuesta sí está sustentada: la evidencia del proyecto describe defensas ribereñas para protección frente a inundaciones, y el Marco 2021 recuperado en la p. 35 incluye explícitamente 'sistemas de defensa contra inundaciones fluviales'. La conclusión no excede la evidencia disponible. No es necesario abstenerse por falta de información, y no se identifica una categoría alternativa más plausible que deba contrastarse antes de cerrar."
+  },
+  "tool_calls": [
+    {
+      "name": "obtener_proyecto"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "consultar_marco_logico"
+    }
+  ],
+  "consultas_marco": []
+}

@@ -1,0 +1,82 @@
+{
+  "cui": "2234052",
+  "modelo": "gpt-5.4-mini",
+  "resultado": {
+    "cui": "2234052",
+    "clasificacion": "Gestión sostenible de recursos naturales, uso de suelos y áreas marinas protegidas",
+    "criterio_principal": "USCUSS-2 Manejo Forestal Comunitario",
+    "estado": "APROBADO",
+    "iteraciones": 1,
+    "evidencia_suficiente": true,
+    "requiere_revision_humana": false,
+    "justificacion": "La evidencia del proyecto y del marco lógico muestra una intervención de gestión comunal orientada al desarrollo de la actividad forestal y a la administración de recursos forestales comunales. Eso coincide materialmente con el criterio USCUSS-2 Manejo Forestal Comunitario del Marco 2021 (p. 36). No hay evidencia material de agricultura sostenible ni de manejo de residuos.",
+    "paginas_marco": [
+      36
+    ],
+    "evidencia_proyecto": [
+      "Nombre del proyecto: “MEJORAMIENTO DE LA GESTION COMUNAL PARA EL DESARROLLO DE LA ACTIVIDAD FORESTAL EN 20 MICROCUENCAS Y 4 SUB CUENCAS DE LA REGION APURIMAC”.",
+      "Función: Ambiente; Programa: “Desarrollo estratégico, conservación y aprovechamiento sostenible del patrimonio natural”; Subprograma: “Conservación y aprovechamiento sostenible de la diversidad biológica y de los recursos naturales”.",
+      "El objeto del proyecto está centrado en gestión comunal y actividad forestal, en Apurímac."
+    ],
+    "evidencia_brechas": [
+      "Brecha reportada: “SERVICIO DE APOYO AL USO SOSTENIBLE DE LA BIODIVERSIDAD”.",
+      "Brecha: “PORCENTAJE DE SUPERFICIE CON POTENCIAL PARA EL APOYO AL USO SOSTENIBLE DE LA BIODIVERSIDAD SIN INTERVENCIÓN”."
+    ],
+    "evidencia_marco": [
+      "Marco 2021, p. 36: son elegibles gastos para la gestión sostenible, cuidado, protección y restauración de recursos naturales y biodiversidad, e incluye explícitamente “USCUSS-2 Manejo Forestal Comunitario”."
+    ],
+    "evidencia_marco_logico": [
+      "Objetivo: “Fortalecimiento de la gestión comunal para el desarrollo de la actividad forestal en 20 microcuencas y 4 subcuencas de la región Apurímac.”",
+      "Componente visible: “Planificar y administrar adecuadamente los recursos forestales comunales.”",
+      "Brecha/necesidad: las comunidades requieren documentos de gestión para la actividad forestal y una organización forestal comunal dedicada a esta actividad."
+    ],
+    "alertas_documentales": []
+  },
+  "trayectoria": [
+    {
+      "iteracion": 1,
+      "fase": "agente_evidencia"
+    },
+    {
+      "iteracion": 1,
+      "fase": "validacion_determinista",
+      "aprobado": true
+    },
+    {
+      "iteracion": 1,
+      "fase": "verificador_semantico",
+      "aprobado": true,
+      "categoria_sustentada": true,
+      "evidencia_suficiente": true,
+      "siguiente_accion": "finalizar"
+    }
+  ],
+  "veredicto": {
+    "aprobado": true,
+    "categoria_sustentada": true,
+    "evidencia_suficiente": true,
+    "problemas": [],
+    "feedback_para_agente": "La categoría propuesta está sustentada por la evidencia recuperada: el proyecto es de gestión comunal para actividad forestal, el marco lógico habla de administración de recursos forestales comunales y el Marco 2021 p. 36 incluye expresamente USCUSS-2 Manejo Forestal Comunitario dentro de 'Gestión sostenible de recursos naturales, uso de suelos y áreas marinas protegidas'. Los criterios normativos citados sí corresponden al Marco 2021 recuperado. No se observa sustento para mover el caso a agricultura sostenible ni a manejo de residuos. Tampoco hace falta exigir, con esta evidencia, los requisitos de las notas 45-47 porque no se está usando un subcriterio que los active por sí solo. "
+  },
+  "tool_calls": [
+    {
+      "name": "obtener_proyecto"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "consultar_marco_logico"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    }
+  ],
+  "consultas_marco": []
+}

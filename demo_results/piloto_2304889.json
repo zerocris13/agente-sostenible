@@ -1,0 +1,83 @@
+{
+  "cui": "2304889",
+  "modelo": "gpt-5.4-mini",
+  "resultado": {
+    "cui": "2304889",
+    "clasificacion": "Gestión eficiente y resiliente de aguas y aguas residuales",
+    "criterio_principal": "Infraestructura y sistemas que permitan mejorar la gestión eficiente y sostenible de agua y aguas residuales urbanas",
+    "estado": "APROBADO",
+    "iteraciones": 1,
+    "evidencia_suficiente": true,
+    "requiere_revision_humana": false,
+    "justificacion": "La evidencia recuperada muestra una intervención de saneamiento urbano centrada en infraestructura de agua potable y alcantarillado: redes de aducción, conducción y distribución, reservorios, conexiones domiciliarias y redes secundarias de alcantarillado. Esto coincide materialmente con la categoría del Marco en la p. 35 sobre gestión eficiente y resiliente de aguas y aguas residuales. No se observa necesidad de tratamiento de aguas residuales para sustentar la elegibilidad, porque el Marco también admite infraestructura y sistemas, incluyendo transporte y mejora del servicio. La evidencia es suficiente y no hay indicios de otra categoría verde más pertinente.",
+    "paginas_marco": [
+      35
+    ],
+    "evidencia_proyecto": [
+      "Nombre de la inversión: “MEJORAMIENTO, AMPLIACION DE LOS SERVICIOS DE AGUA POTABLE Y ALCANTARILLADO DE LA MICROCUENCA PIURAY CORIMARCA, DISTRITO DE CHINCHERO - URUBAMBA - CUSCO”.",
+      "Componentes declarados: instalación de líneas de aducción y distribución, construcción de reservorios de agua potable, instalación de sistemas de conducción de agua potable, conexiones intradomiciliarias, instalación de redes secundarias de alcantarillado y conexiones intradomiciliarias de alcantarillado.",
+      "El proyecto está orientado a ampliar y mejorar servicios urbanos de agua potable y alcantarillado.",
+      "Las brechas del proyecto apuntan a falta de acceso, continuidad y calidad del servicio de agua potable, además de carencia de alcantarillado."
+    ],
+    "evidencia_brechas": [
+      "Servicio de alcantarillado: población urbana sin acceso a servicios de alcantarillado u otras formas de disposición sanitaria de excretas.",
+      "Servicio de agua potable urbano: población urbana sin acceso al servicio de agua potable mediante red pública o pileta pública.",
+      "Servicio de agua potable urbano: población urbana que no tiene continuidad del servicio de agua potable.",
+      "Servicio de agua potable urbano: viviendas urbanas con servicio de agua con cloro residual menor al límite permisible (0.5 mg/L)."
+    ],
+    "evidencia_marco": [
+      "Marco del Bono Sostenible del Perú, p. 35: la categoría incluye financiamiento de costos para estudios, diseño, construcción, operación, mantenimiento, ampliación y adaptación para la gestión eficiente y sostenible de agua y aguas residuales.",
+      "Marco p. 35: incluye infraestructura y sistemas para mejorar la gestión eficiente y sostenible de agua y aguas residuales urbanas.",
+      "Marco p. 35: incluye gestión de aguas residuales mediante instalación o mejora de infraestructura, incluidos sistemas de transporte, tratamiento y eliminación.",
+      "Marco p. 35: incluye construcción de reservorios para el control de los flujos de agua.",
+      "Marco p. 35: incluye programas de capacitación para fortalecer capacidades en gestión de agua y aguas residuales."
+    ],
+    "evidencia_marco_logico": [
+      "Objetivo: “Adecuados servicios de agua potable y alcantarillado en la microcuenca Piuray Corimarca, distrito de Chinchero - Urubamba - Cusco.”",
+      "Componentes: adecuados sistemas de líneas de aducción y distribución de agua potable; adecuados sistemas de almacenamiento de agua potable; adecuados sistemas de conducción de agua potable; eficiente gestión en la operación y mantenimiento de los servicios de agua potable; alcantarillado adecuado; conocimiento de educación sanitaria en la población.",
+      "Actividades: construcción de reservorios; instalación de líneas de conducción y distribución de agua; instalación de redes secundarias de alcantarillado; fortalecimiento de la gestión de servicios de saneamiento e intervención social para educación sanitaria."
+    ],
+    "alertas_documentales": []
+  },
+  "trayectoria": [
+    {
+      "iteracion": 1,
+      "fase": "agente_evidencia"
+    },
+    {
+      "iteracion": 1,
+      "fase": "validacion_determinista",
+      "aprobado": true
+    },
+    {
+      "iteracion": 1,
+      "fase": "verificador_semantico",
+      "aprobado": true,
+      "categoria_sustentada": true,
+      "evidencia_suficiente": true,
+      "siguiente_accion": "finalizar"
+    }
+  ],
+  "veredicto": {
+    "aprobado": true,
+    "categoria_sustentada": true,
+    "evidencia_suficiente": true,
+    "problemas": [],
+    "feedback_para_agente": "La categoría propuesta sí está sustentada por la evidencia recuperada: el proyecto es de saneamiento urbano, con redes de aducción, conducción y distribución de agua potable, reservorios y redes secundarias de alcantarillado, lo que encaja con la categoría del Marco 2021 en p. 35 sobre gestión eficiente y resiliente de aguas y aguas residuales. El criterio principal seleccionado también queda respaldado, porque el marco admite infraestructura y sistemas para mejorar la gestión de agua y aguas residuales urbanas, no solo tratamiento. No se observa que la conclusión exceda la evidencia ni que sea necesario abstenerse por insuficiencia documental. No aparece una categoría verde alternativa más pertinente que deba contrastarse antes de cerrar."
+  },
+  "tool_calls": [
+    {
+      "name": "obtener_proyecto"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "consultar_marco_logico"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    }
+  ],
+  "consultas_marco": []
+}

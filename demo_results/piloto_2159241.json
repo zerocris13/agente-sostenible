@@ -1,0 +1,78 @@
+{
+  "cui": "2159241",
+  "modelo": "gpt-5.4-mini",
+  "resultado": {
+    "cui": "2159241",
+    "clasificacion": "Gestión eficiente y resiliente de aguas y aguas residuales",
+    "criterio_principal": "AGU-13 Ampliación, optimización y/o mejoramiento de la capacidad de producción de los sistemas de agua potable",
+    "estado": "APROBADO",
+    "iteraciones": 1,
+    "evidencia_suficiente": true,
+    "requiere_revision_humana": false,
+    "justificacion": "El proyecto consiste en el mejoramiento y ampliación de un sistema urbano de agua potable y alcantarillado, y la brecha recuperada se refiere a acceso urbano al agua potable. El Marco 2021, en la página 35, considera elegibles tanto la ampliación/mejoramiento de sistemas de agua potable como la infraestructura de aguas residuales, por lo que la correspondencia material con la categoría es directa. Se selecciona como criterio principal AGU-13 por ser el encaje más explícito con la evidencia recuperada del proyecto.",
+    "paginas_marco": [
+      30,
+      35
+    ],
+    "evidencia_proyecto": [
+      "Nombre de la inversión: \"MEJORAMIENTO Y AMPLIACIÓN DEL SISTEMA DE AGUA POTABLE Y ALCANTARILLADO DEL CENTRO POBLADO LIMONCARRO, DISTRITO DE GUADALUPE - PACASMAYO - LA LIBERTAD\".",
+      "Función/Programa/Subprograma: SANEAMIENTO / SANEAMIENTO / SANEAMIENTO URBANO.",
+      "La intervención está orientada a sistema de agua potable y alcantarillado, es decir, infraestructura urbana de agua y aguas residuales.",
+      "Brecha asociada al servicio de agua potable: \"PORCENTAJE DE LA POBLACIÓN URBANA SIN ACCESO AL SERVICIO DE AGUA POTABLE MEDIANTE RED PÚBLICA O PILETA PÚBLICA\".",
+      "Contribución de la brecha: 5,000 personas al 2026."
+    ],
+    "evidencia_brechas": [
+      "Brecha del servicio de agua potable en ámbito urbano, con contribución de 5,000 personas al 2026."
+    ],
+    "evidencia_marco": [
+      "Página 30: el Marco ubica \"Gestión eficiente y resiliente de agua y aguas residuales\" dentro de las 8 categorías verdes elegibles.",
+      "Página 35: son elegibles los gastos para estudios, diseño, construcción, operación, mantenimiento, ampliación y adaptación para la gestión eficiente y sostenible de agua y aguas residuales.",
+      "Página 35: incluye \"infraestructura y sistemas que permitan mejorar la gestión eficiente y sostenible de agua y aguas residuales urbanas\".",
+      "Página 35: incluye \"instalación o mejora de la infraestructura de aguas residuales; incluidos los sistemas de transporte, tratamiento y eliminación\".",
+      "Página 35: incluye \"ampliación, optimización y/o mejoramiento de la capacidad de producción de los sistemas de agua potable\"."
+    ],
+    "evidencia_marco_logico": [],
+    "alertas_documentales": []
+  },
+  "trayectoria": [
+    {
+      "iteracion": 1,
+      "fase": "agente_evidencia"
+    },
+    {
+      "iteracion": 1,
+      "fase": "validacion_determinista",
+      "aprobado": true
+    },
+    {
+      "iteracion": 1,
+      "fase": "verificador_semantico",
+      "aprobado": true,
+      "categoria_sustentada": true,
+      "evidencia_suficiente": true,
+      "siguiente_accion": "finalizar"
+    }
+  ],
+  "veredicto": {
+    "aprobado": true,
+    "categoria_sustentada": true,
+    "evidencia_suficiente": true,
+    "problemas": [
+      "La sustentación del criterio AGU-13 se apoya sobre todo en la denominación del proyecto ('mejoramiento y ampliación del sistema de agua potable'); no se desagrega técnicamente si hay incremento de capacidad de producción, aunque la evidencia disponible es suficiente para una validación preliminar.",
+      "El componente de alcantarillado no es el que sustenta el criterio principal; la justificación debería dejar explícito que la selección se basa en el componente de agua potable dentro de la misma categoría normativa."
+    ],
+    "feedback_para_agente": "La categoría 'Gestión eficiente y resiliente de aguas y aguas residuales' está bien sustentada por el Marco 2021 recuperado: página 30 la reconoce como categoría verde elegible y la página 35 incluye infraestructura urbana de agua y aguas residuales, así como la ampliación/mejoramiento de la capacidad de producción de sistemas de agua potable. El proyecto también encaja materialmente por su objeto y por la brecha urbana de acceso a agua potable. El criterio principal AGU-13 es defendible con la evidencia disponible, aunque sería más sólido si se incorporara memoria descriptiva o componentes técnicos que muestren el aumento de capacidad de producción. No se identifica una categoría alternativa que deba prevalecer antes de cerrar."
+  },
+  "tool_calls": [
+    {
+      "name": "obtener_proyecto"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    }
+  ],
+  "consultas_marco": []
+}

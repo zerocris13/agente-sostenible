@@ -1,0 +1,75 @@
+{
+  "cui": "2064576",
+  "modelo": "gpt-5.4-mini",
+  "resultado": {
+    "cui": "2064576",
+    "clasificacion": "Agricultura sostenible",
+    "criterio_principal": "AGU-3 Implementación de infraestructura hidráulica de conducción, distribución y aplicación de agua para riego",
+    "estado": "APROBADO",
+    "iteraciones": 1,
+    "evidencia_suficiente": true,
+    "requiere_revision_humana": false,
+    "justificacion": "La intervención es materialmente un proyecto de irrigación agrícola y la brecha es de agua para riego. El criterio del Marco recuperado en la página 37 encuadra de forma directa la infraestructura hidráulica de conducción, distribución y aplicación de agua para riego, por lo que corresponde Agricultura sostenible. La categoría de gestión de aguas es menos específica para este caso.",
+    "paginas_marco": [
+      37
+    ],
+    "evidencia_proyecto": [
+      "Nombre de la inversión: AFIANZAMIENTO HIDRICO DEL SISTEMA DE IRRIGACION CABANA.",
+      "Sector: Agricultura y Riego; Programa: Promoción de la Producción Agraria; Subprograma: Irrigación.",
+      "Brecha asociada: Servicio de provisión de agua para riego / porcentaje de superficie agrícola sin riego.",
+      "Contribución reportada: 730 ha; beneficiarios finales: 2,600."
+    ],
+    "evidencia_brechas": [
+      "La brecha registrada corresponde a provisión de agua para riego, no a agua potable ni a aguas residuales."
+    ],
+    "evidencia_marco": [
+      "Página 37 del Marco 2021: en Agricultura sostenible se permiten ‘Sistemas de irrigación por goteo’, ‘Sistemas de riego con el uso eficiente de aguas...’ y ‘AGU-3 Implementación de infraestructura hidráulica de conducción, distribución y aplicación de agua para riego’."
+    ],
+    "evidencia_marco_logico": [],
+    "alertas_documentales": []
+  },
+  "trayectoria": [
+    {
+      "iteracion": 1,
+      "fase": "agente_evidencia"
+    },
+    {
+      "iteracion": 1,
+      "fase": "validacion_determinista",
+      "aprobado": true
+    },
+    {
+      "iteracion": 1,
+      "fase": "verificador_semantico",
+      "aprobado": true,
+      "categoria_sustentada": true,
+      "evidencia_suficiente": true,
+      "siguiente_accion": "finalizar"
+    }
+  ],
+  "veredicto": {
+    "aprobado": true,
+    "categoria_sustentada": true,
+    "evidencia_suficiente": true,
+    "problemas": [
+      "Existe una categoría alternativa plausible en la página 35 (Gestión eficiente y resiliente de aguas y aguas residuales), pero el proyecto y la brecha son más específicos de riego agrícola, por lo que no desplazan a Agricultura sostenible.",
+      "La denominación 'afianzamiento hídrico' es amplia; la sustanciación depende correctamente de la brecha de provisión de agua para riego y del subprograma de irrigación."
+    ],
+    "feedback_para_agente": "La clasificación propuesta sí queda sustentada por la evidencia recuperada: el proyecto pertenece al sector Agricultura y Riego, subprograma Irrigación, y la brecha es 'servicio de provisión de agua para riego'. La página 37 del Marco 2021 sí contiene AGU-3 ('Implementación de infraestructura hidráulica de conducción, distribución y aplicación de agua para riego'), por lo que el criterio principal citado corresponde al marco recuperado. No hace falta abstenerse por insuficiencia de información. Como contraste, la página 35 ofrece una categoría de agua y aguas residuales, pero es más genérica y menos específica para una inversión de riego agrícola; por tanto, no impide cerrar en Agricultura sostenible."
+  },
+  "tool_calls": [
+    {
+      "name": "obtener_proyecto"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    }
+  ],
+  "consultas_marco": []
+}

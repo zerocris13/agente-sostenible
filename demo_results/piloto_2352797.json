@@ -1,0 +1,85 @@
+{
+  "cui": "2352797",
+  "modelo": "gpt-5.4-mini",
+  "resultado": {
+    "cui": "2352797",
+    "clasificacion": "Gestión sostenible de recursos naturales, uso de suelos y áreas marinas protegidas",
+    "criterio_principal": "Protección y restauración de los sistemas ecosistémicos terrestres y de agua dulce, así como la biodiversidad, hábitats naturales, los suelos y sus servicios ecosistémicos respectivos",
+    "estado": "APROBADO",
+    "iteraciones": 1,
+    "evidencia_suficiente": true,
+    "requiere_revision_humana": false,
+    "justificacion": "La evidencia del proyecto y del marco lógico muestra una intervención de restauración ambiental: recuperación de cobertura vegetal, forestación/reforestación, manejo sostenible del bosque y control de erosión de suelos. Eso encaja materialmente con la categoría de gestión sostenible de recursos naturales y, en particular, con la protección y restauración de sistemas ecosistémicos terrestres, suelos y servicios ecosistémicos descritos en la página 36 del Marco 2021. La categoría de agricultura sostenible fue revisada en la página 37, pero no hay evidencia de producción agrícola, riego, insumos agrícolas o reconversión de cultivos.",
+    "paginas_marco": [
+      36,
+      37
+    ],
+    "evidencia_proyecto": [
+      "Nombre de la inversión: \"RECUPERACIÓN DEL SERVICIO ECOSISTEMICO DEL CONTROL DE EROSION DE SUELOS EN LA ZOCRE BOSHUMI Y SU AMBITO DE INFLUENCIA, PROVINCIA DE TOCACHE Y MARISCAL CACERES, REGION SAN MARTIN\".",
+      "Función: Ambiente; Programa: Desarrollo estratégico, conservación y aprovechamiento sostenible del patrimonio natural; Subprograma: Gestión integrada y sostenible de los ecosistemas.",
+      "Brecha reportada: \"Porcentaje de superficie de ecosistemas degradados que brindan servicios ecosistémicos que requieren de recuperación\".",
+      "Actividades identificadas: producción de plantones forestales en vivero, forestación/reforestación de áreas críticas, capacitación y asistencia técnica para el manejo sostenible del bosque."
+    ],
+    "evidencia_brechas": [
+      "La brecha se refiere explícitamente a ecosistemas degradados que requieren recuperación.",
+      "El objeto del proyecto es recuperar el control de erosión de suelos, lo que remite a restauración de suelos y servicios ecosistémicos.",
+      "No se observa evidencia material de agricultura productiva, riego, energía, transporte, agua potable, residuos o infraestructura edificada."
+    ],
+    "evidencia_marco": [
+      "Marco del Bono Sostenible del Perú, página 36: la categoría incluye gastos para la gestión sostenible, cuidado, protección y restauración de recursos naturales, biodiversidad y áreas marinas protegidas.",
+      "Página 36: \"Protección y restauración de los sistemas ecosistémicos terrestres y de agua dulce, así como la biodiversidad, hábitats naturales, los suelos y sus servicios ecosistémicos respectivos.\"",
+      "Página 37 fue revisada para Agricultura sostenible, pero su contenido se orienta a insumos agrícolas, riego, monitoreo agrícola y reconversión de cultivos, sin correspondencia material con el proyecto."
+    ],
+    "evidencia_marco_logico": [
+      "Objetivo: contribuir a la mejora de las condiciones ambientales y socioeconómicas mediante acciones vinculadas a la recuperación/manejo de la cobertura vegetal y del recurso forestal.",
+      "Problema central: deterioro del recurso forestal y de las condiciones ambientales por tala/quema indiscriminada, cambio de uso del suelo y limitada gestión sostenible del bosque.",
+      "Componentes: instalación de cobertura vegetal/forestación en áreas críticas; fortalecimiento de capacidades para el manejo sostenible del bosque; difusión y apoyo a la gestión ambiental y forestal local.",
+      "Actividades: producción de plantones forestales, forestación/reforestación de áreas críticas, capacitación y asistencia técnica, sensibilización sobre conservación y uso sostenible del recurso forestal."
+    ],
+    "alertas_documentales": []
+  },
+  "trayectoria": [
+    {
+      "iteracion": 1,
+      "fase": "agente_evidencia"
+    },
+    {
+      "iteracion": 1,
+      "fase": "validacion_determinista",
+      "aprobado": true
+    },
+    {
+      "iteracion": 1,
+      "fase": "verificador_semantico",
+      "aprobado": true,
+      "categoria_sustentada": true,
+      "evidencia_suficiente": true,
+      "siguiente_accion": "finalizar"
+    }
+  ],
+  "veredicto": {
+    "aprobado": true,
+    "categoria_sustentada": true,
+    "evidencia_suficiente": true,
+    "problemas": [],
+    "feedback_para_agente": "La categoría propuesta sí está sustentada por la evidencia recuperada: el proyecto se orienta a recuperar un servicio ecosistémico de control de erosión de suelos, con actividades de forestación/reforestación, producción de plantones y manejo sostenible del bosque. Eso encaja con el Marco 2021, página 36, en la categoría de gestión sostenible de recursos naturales, uso de suelos y áreas marinas protegidas, especialmente en la parte de protección y restauración de sistemas ecosistémicos terrestres, suelos y servicios ecosistémicos. La referencia a agricultura sostenible en la página 37 fue correctamente descartada porque no hay evidencia de producción agrícola, riego, insumos agrícolas ni reconversión de cultivos. La conclusión no excede la evidencia disponible y no hace falta abstenerse. Como contraste alternativo, solo sería pertinente revisar si el encuadre más específico cae en conservación/restauración de bosques, pero eso no debilita la categoría general ya sustentada."
+  },
+  "tool_calls": [
+    {
+      "name": "obtener_proyecto"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "consultar_marco_logico"
+    }
+  ],
+  "consultas_marco": []
+}

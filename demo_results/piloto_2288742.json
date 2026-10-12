@@ -1,0 +1,87 @@
+{
+  "cui": "2288742",
+  "modelo": "gpt-5.4-mini",
+  "resultado": {
+    "cui": "2288742",
+    "clasificacion": "Gestión sostenible de recursos naturales, uso de suelos y áreas marinas protegidas",
+    "criterio_principal": "USCUSS-6 Plantaciones forestales comerciales",
+    "estado": "REVISION_HUMANA",
+    "iteraciones": 1,
+    "evidencia_suficiente": true,
+    "requiere_revision_humana": true,
+    "justificacion": "La inversión es forestal y su brecha está asociada a recuperación de ecosistemas degradados; el Marco 2021, pág. 36, admite plantaciones forestales comerciales y acciones de restauración de ecosistemas/bosques. No hay evidencia para las demás categorías revisadas.",
+    "paginas_marco": [
+      36
+    ],
+    "evidencia_proyecto": [
+      "Nombre de la inversión: \"MEJORAMIENTO DE LA PRODUCCION FORESTAL CON PINO EN LAS COMUNIDADES ALTO ANDINAS...\"",
+      "Función: Ambiente; Programa: Desarrollo estratégico, conservación y aprovechamiento sostenible del patrimonio natural; Subprograma: Gestión integrada y sostenible de los ecosistemas.",
+      "Brecha registrada: \"Porcentaje de superficie de ecosistemas degradados que brindan servicios ecosistémicos que requieren de recuperación\" (contribución 100%)."
+    ],
+    "evidencia_brechas": [
+      "Servicio: Servicios ecosistémicos.",
+      "Brecha orientada a recuperación de ecosistemas degradados que brindan servicios ecosistémicos.",
+      "La intervención se vincula a recuperación/restauración forestal, no a agua, residuos, edificios o agricultura como eje principal."
+    ],
+    "evidencia_marco": [
+      "Marco 2021, pág. 36: incluye gastos para gestión sostenible, cuidado, protección y restauración de recursos naturales y biodiversidad.",
+      "Pág. 36: admite \"Programas de conservación y restauración de bosques nativos y exóticos\" y \"Protección y restauración de los sistemas ecosistémicos terrestres y de agua dulce\".",
+      "Pág. 36: incluye expresamente \"USCUSS-6 Plantaciones forestales comerciales\" y \"USCUSS-7 Plantaciones forestales con fines de protección y/o restauración\"."
+    ],
+    "evidencia_marco_logico": [],
+    "alertas_documentales": []
+  },
+  "trayectoria": [
+    {
+      "iteracion": 1,
+      "fase": "agente_evidencia"
+    },
+    {
+      "iteracion": 1,
+      "fase": "validacion_determinista",
+      "aprobado": true
+    },
+    {
+      "iteracion": 1,
+      "fase": "verificador_semantico",
+      "aprobado": false,
+      "categoria_sustentada": true,
+      "evidencia_suficiente": false,
+      "siguiente_accion": "revision_humana"
+    }
+  ],
+  "veredicto": {
+    "aprobado": false,
+    "categoria_sustentada": true,
+    "evidencia_suficiente": false,
+    "problemas": [
+      "La categoría amplia sí está respaldada por el proyecto forestal y por la brecha de recuperación de ecosistemas degradados.",
+      "Los criterios normativos citados sí corresponden al Marco 2021 recuperado, en particular la pág. 36.",
+      "Sin embargo, la sustentación del criterio principal USCUSS-6 es incompleta: no hay marco lógico, plan de manejo forestal, certificación FSC/PEFC ni detalle técnico que confirme que se trata de una plantación forestal comercial y no de restauración/protección.",
+      "La evidencia disponible también permite una lectura alternativa bajo USCUSS-7 (plantaciones forestales con fines de protección y/o restauración), por lo que conviene contrastarla antes de cerrar.",
+      "La conclusión operativa es más prudente que la evidencia, pero aún no basta para cerrar con certeza el criterio principal específico."
+    ],
+    "feedback_para_agente": "La categoría general de recursos naturales/uso de suelos está bien sustentada y la cita normativa de la pág. 36 es correcta. No cierres todavía con USCUSS-6 como criterio principal sin verificar el expediente técnico o el marco lógico: necesitas confirmar si la intervención es comercial, de protección/restauración o mixta. Antes de finalizar, contrasta expresamente USCUSS-6 con USCUSS-7 y revisa si existe documentación de manejo forestal o certificación FSC/PEFC."
+  },
+  "tool_calls": [
+    {
+      "name": "obtener_proyecto"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    },
+    {
+      "name": "consultar_marco_logico"
+    },
+    {
+      "name": "buscar_criterios_marco"
+    }
+  ],
+  "consultas_marco": []
+}
