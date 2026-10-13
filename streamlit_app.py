@@ -1164,6 +1164,132 @@ else:
 
     with t4:
 
+        st.markdown(
+            "**Auditoría multimodal de la evaluación**"
+        )
+
+        auditoria = registro.get("auditoria_multimodal")
+
+        if isinstance(auditoria, dict):
+
+            invocaciones = auditoria.get(
+                "invocaciones_vision", 0
+            )
+
+            procesado = (
+                auditoria.get("procesado") is True
+            )
+
+            archivos = (
+                auditoria.get("archivos_analizados")
+                or []
+            )
+
+            if not isinstance(archivos, list):
+                archivos = []
+
+            evidencia = bool(
+                resultado.get("evidencia_marco_logico")
+            )
+
+            st.write(
+                "Herramienta visual invocada:",
+                "Sí" if invocaciones else "No",
+            )
+
+            st.write(
+                "Invocaciones de visión:",
+                invocaciones,
+            )
+
+            st.write(
+                "Extracción visual completada:",
+                "Sí" if procesado else "No",
+            )
+
+            st.write(
+                "Archivos visuales analizados:",
+                len(archivos),
+            )
+
+            st.write(
+                "Evidencia visual incorporada:",
+                "Sí" if evidencia else "No",
+            )
+
+            if archivos:
+                with st.expander(
+                    "Ver archivos analizados"
+                ):
+                    for nombre in archivos:
+                        st.write(nombre)
+
+            st.caption(
+                "Los indicadores provienen de las "
+                "llamadas y resultados registrados "
+                "por las herramientas. Procesar una "
+                "imagen no demuestra por sí solo "
+                "que haya influido en la decisión."
+            )
+
+        else:
+
+            # Compatibilidad con informes antiguos.
+            llamadas = registro.get("tool_calls")
+
+            if isinstance(llamadas, list):
+
+                total_vision = sum(
+                    isinstance(item, dict)
+                    and (
+                        item.get("name")
+                        or item.get("tool")
+                    ) == "consultar_marco_logico"
+                    for item in llamadas
+                )
+
+                st.write(
+                    "Herramienta visual invocada:",
+                    "Sí" if total_vision else "No",
+                )
+
+                st.write(
+                    "Invocaciones registradas:",
+                    total_vision,
+                )
+
+            else:
+                st.write(
+                    "Herramienta visual invocada:",
+                    "No verificable",
+                )
+
+            st.write(
+                "Extracción visual completada:",
+                "No verificable en este informe antiguo",
+            )
+
+            st.write(
+                "Archivos visuales analizados:",
+                "No verificable",
+            )
+
+            st.write(
+                "Evidencia visual registrada:",
+                "Sí" if resultado.get(
+                    "evidencia_marco_logico"
+                ) else "No",
+            )
+
+            st.caption(
+                "Este informe fue generado antes "
+                "de incorporar la auditoría multimodal "
+                "completa. No se conservó el detalle "
+                "de las respuestas visuales."
+            )
+
+        st.divider()
+
         mostrar_evidencias(
             resultado.get("evidencia_marco_logico") or []
         )
