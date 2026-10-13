@@ -497,6 +497,9 @@ def clasificar_cui(cui: str) -> dict:
             "tool_calls": [],
             "consultas_marco": [],
             "trajectory": [],
-        }
+        },
+        config={
+            "recursion_limit": 4 * MAX_ITERACIONES + 4
+        },
     )
     return final_state

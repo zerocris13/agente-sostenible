@@ -166,7 +166,7 @@ si el feedback indica que falta evidencia o contraste.
 
     result = agent.invoke(
         {"messages": [{"role": "user", "content": user_prompt}]},
-        config={"recursion_limit": 12},
+        config={"recursion_limit": 20},
     )
 
     messages = result.get("messages", [])
