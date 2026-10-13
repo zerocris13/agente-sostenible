@@ -17,8 +17,8 @@ def reservar_ejecucion(
     cui: str,
     db_path=None,
     instante=None,
-    max_por_dia: int = 2,
-    espera_minutos: int = 60,
+    max_por_dia: int = 7,
+    espera_minutos: int = 0,
 ) -> int:
 
     cui = str(cui).strip()
@@ -26,7 +26,7 @@ def reservar_ejecucion(
     if not (len(cui) == 7 and cui.isascii() and cui.isdigit()):
         raise ValueError("CUI invalido.")
 
-    if max_por_dia < 1 or espera_minutos < 1:
+    if max_por_dia < 1 or espera_minutos < 0:
         raise ValueError("Limites invalidos.")
 
     ahora = instante or datetime.now(timezone.utc)
@@ -90,7 +90,7 @@ def reservar_ejecucion(
             (cui, fecha(inicio_espera)),
         ).fetchone()
 
-        if repetido:
+        if espera_minutos > 0 and repetido:
             raise PermissionError(
                 "Este CUI fue solicitado recientemente."
             )
